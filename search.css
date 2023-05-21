@@ -1,0 +1,41 @@
+.anime-card {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding-top: 50px !important;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+.anime-card-info {
+    width: 40%;
+    background-image: url('Images/back2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 500px;
+}
+
+.anime-card img {
+    height: 500px;
+    object-fit: contain;
+}
+
+.anime-card h3 {
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 50px;
+    font-family: kuro;
+}
+
+.anime-card p {
+
+    color: black;
+    padding: 5%;
+    font-size: 20px;
+    font-family: kuro;
+    text-shadow: none !important;
+}

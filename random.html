@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">Anime<span>World</span></a>
+        </div>
+        <div class="search-div">
+            <img src="Images/search.png" onclick="searchAnime()">
+            <input type="text" id="searchInput" placeholder="Search anime...">
+
+        </div>
+        <nav class="nav_bar">
+            <div class="closeNav">
+                <img id="close-button" src="Images/close.png" alt="close">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="favorites.html">Favorites <span id="favorites-count"></span></a></li>
+                <li><a class="active" href="random.html">Random</a></li>
+            </ul>
+        </nav>
+        <div class="menu">
+            <img id="menu-bar1" onmouseover="menuHover()" src="Images/menu-red.png"></img>
+            <img id="menu-bar2" onclick="showNav()" onmouseleave="menuDefault()" src="Images/menu-white.png"></img>
+
+        </div>
+    </header>
+    <div class="characterRandom">
+        <h1 class="character-random">Random Character</h1>
+        <div class="btn-random-character">
+            <button id="getRandomCharacter">Get Another Character</button>
+        </div>
+    </div>
+    <div class="container-characters" id="random-character">
+        <div class="characters-image"></div>
+        <div class="Character-info">
+            <h1 class="character-name"></h1>
+            <p class="character-description"></p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 AnimeWorld. All rights reserved.</p>
+
+        </div>
+    </footer>
+</body>
+<script src="random.js"></script>
+
+</html>

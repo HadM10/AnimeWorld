@@ -1,0 +1,182 @@
+.carousel-item img {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 100vh;
+}
+
+.carousel-item {
+    transition: 2s ease-in-out !important;
+}
+
+.carousel-item-next,
+.carousel-item-prev {
+    transition-duration: 2s !important;
+    /* Adjust the duration as needed */
+}
+
+.carousel-caption h1,
+p {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.carousel-caption p {
+    margin-bottom: 50px;
+
+}
+
+.carousel-caption h1.snk {
+    font-family: aot;
+    font-size: 100px;
+}
+
+.carousel-caption h1.anime {
+    font-family: anime;
+    font-size: 50px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.carousel-caption h1.one_piece {
+    font-family: onepiece;
+    font-size: 70px;
+}
+
+.carousel-caption h1.naruto {
+    font-family: naruto;
+    font-size: 50px;
+}
+
+.carousel-caption h1.death-note {
+    font-family: deathnote;
+    font-size: 50px;
+}
+
+.carousel-caption h1.dragon-ball {
+    font-family: dragonball;
+    font-size: 60px;
+}
+
+.demon-slayer {
+    width: 150px !important;
+
+}
+
+.carousel-caption p {
+    font-size: 15px;
+    width: 40%;
+    text-align: left;
+    float: left;
+}
+
+.carousel-caption h1 {
+
+    width: 100%;
+    margin: auto;
+    text-align: left;
+}
+
+
+.carousel-caption {
+    top: 20% !important;
+    right: 50% !important;
+    left: 12% !important;
+    bottom: 40% !important;
+    width: 50% !important;
+    margin: auto;
+    float: left;
+    align-items: flex-start;
+    flex-direction: column;
+    z-index: 11;
+
+
+}
+
+.carousel-item img.rating {
+    width: 26px;
+    height: 26px;
+    margin-bottom: 3%;
+    margin-right: 10px;
+
+}
+
+.carousel-item button.genre {
+    width: 100px;
+    border-radius: 1.5vh;
+    border: none;
+    color: white;
+    box-shadow: 2px 4px 4px rgb(7, 6, 6);
+    margin-bottom: 10% !important;
+    margin-right: 10px;
+    float: left !important;
+    background: linear-gradient(to bottom left, rgb(221, 43, 43), rgba(131, 7, 7, 0.842));
+}
+
+.carousel-item button.watch {
+    width: 150px;
+    border-radius: 0 1.5vh 0 1.5vh;
+    background: linear-gradient(to bottom left, rgb(221, 43, 43), rgba(131, 7, 7, 0.842));
+    border: none;
+    color: white;
+    box-shadow: 2px 4px 4px rgb(7, 6, 6);
+    padding: 5px;
+    float: left;
+    filter: brightness(75%);
+    transition: 1s;
+}
+
+.carousel-indicators {
+    z-index: 11 !important;
+}
+
+.carousel-item button.watch:hover {
+    filter: brightness(110%);
+}
+
+.carousel-item button.watch img {
+    width: 30px;
+    height: 30px;
+}
+
+.play {
+    width: 40%;
+}
+
+.rate {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 5% !important;
+    z-index: 11 !important;
+}
+
+.backblack {
+    width: 50%;
+    background-image: linear-gradient(-90deg,
+            transparent,
+            rgba(37, 37, 37, 0.5),
+            rgba(20, 20, 20, 0.9));
+    height: 100vh;
+    position: absolute;
+    z-index: 10;
+}
+
+.banner-fade {
+    background-image: linear-gradient(180deg,
+            transparent,
+            rgba(37, 37, 37, 0.6),
+            rgb(20, 20, 20));
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    height: 15.2rem;
+    top: 75vh;
+}

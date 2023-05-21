@@ -1,0 +1,165 @@
+header {
+    height: 200px;
+    width: 100%;
+    position: fixed;
+    z-index: 12;
+    background-image: linear-gradient(360deg,
+            transparent,
+            rgba(37, 37, 37, 0.5),
+            rgba(20, 20, 20, 0.9));
+    transition: 1s;
+
+}
+
+.logo {
+    padding: 10px;
+    margin: 20px;
+    font-size: 50px;
+    font-family: naruto;
+    float: left;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo a span {
+    color: red;
+}
+
+.nav_bar {
+    float: right !important;
+    padding: 10px;
+    margin: 20px;
+    font-size: 50px;
+    font-family: naruto;
+
+
+}
+
+.navbar-scrolled {
+    background-color: rgb(8, 8, 8) !important;
+    height: 150px;
+    z-index: 30;
+}
+
+.nav_bar li {
+    list-style: none;
+    padding: 10px;
+    display: inline-block;
+    font-size: 30px;
+
+}
+
+.nav_bar li a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.nav_bar li a:hover {
+    background-color: red;
+}
+
+.nav_bar li a.active:hover {
+    background: none;
+}
+
+.nav_bar li a.active {
+    color: red;
+}
+
+.closeNav {
+    width: 100%;
+}
+
+#close-button {
+    float: right;
+    width: 24px;
+    height: 24px;
+    display: none;
+}
+
+.menu {
+    float: right;
+    display: none;
+    margin: 20px;
+}
+
+#menu-bar2 {
+    display: none;
+}
+
+.menu img {
+    background-color: white;
+    padding: 5px;
+    box-shadow: 2px 2px 2px black;
+    float: right;
+    transition: all 1s ease-in-out;
+    z-index: 12;
+    border-radius: 0.7vw;
+
+}
+
+.menu img:hover {
+    background-color: rgb(185, 0, 0);
+    cursor: pointer;
+}
+
+.nav_bar li a span {
+    font-family: 'kuro';
+    font-size: 40px;
+}
+
+.search-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    float: left;
+    margin: 35px;
+    margin-left: 250px;
+
+}
+
+
+.search-div input {
+    width: 200px;
+    height: 45px;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 0.2vh;
+    float: left;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    margin-right: 0;
+    transition: width 1.5s ease;
+}
+
+.search-div img {
+    width: 65px;
+    height: 63px;
+    cursor: pointer;
+    float: left;
+
+}
+
+.search-div:hover input {
+    width: 350px;
+}
+
+/* .error-message {
+    display: none;
+    color: white;
+    font-size: 14px;
+    margin-top: 5px;
+    background-color: red;
+    font-family: kuro;
+}
+
+.error-message.show {
+    display: block;
+} */
