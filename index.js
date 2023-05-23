@@ -323,30 +323,36 @@ function getVideoIdFromUrl() {
     return videoId;
 }
 
+//ALERT
+
+function showAlert(message) {
+    var modal = document.getElementById("customAlertModal");
+    var alertMessage = document.getElementById("alertMessage");
+
+    alertMessage.textContent = message;
+    modal.style.display = "block";
+}
+
+// Close the custom alert modal
+function closeAlert() {
+    var modal = document.getElementById("customAlertModal");
+    modal.style.display = "none";
+}
+
 //SEARCH 
 
 function searchAnime() {
 
     var searchQuery = document.getElementById("searchInput").value.toLowerCase();
-    // if (searchQuery.trim() === "") {
-    //     displayErrorMessage("Please enter a search query.");
-    //     return;
-    // }
-    // if (searchQuery != '')
-    window.location.href = 'search.html?query=' + encodeURIComponent(searchQuery);
+
+    if (searchQuery == '') {
+        showAlert('Enter an Anime')
+    }
+    else
+        window.location.href = 'search.html?query=' + encodeURIComponent(searchQuery);
 
 }
 
-// function displayErrorMessage(message) {
-//     var errorMessage = document.getElementById("errorMessage");
-//     errorMessage.textContent = message;
-//     errorMessage.classList.add("show");
-// }
-
-// function hideErrorMessage() {
-//     var errorMessage = document.getElementById("errorMessage");
-//     errorMessage.classList.remove("show");
-// }
 
 
 

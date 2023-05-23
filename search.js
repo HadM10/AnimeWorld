@@ -102,6 +102,7 @@ var animeArray = [
 ];
 
 var resultsContainer = document.getElementById("animeResults");
+
 resultsContainer.innerHTML = ""; // Clear previous results
 
 // Filter `animeArray` based on the search query
@@ -110,35 +111,44 @@ var filteredResults = animeArray.filter(function (anime) {
 });
 
 // Display the filtered results
-filteredResults.forEach(function (anime) {
-    var animeCard = document.createElement("div");
-    animeCard.classList.add("anime-card");
+if (filteredResults.length > 0) {
+    filteredResults.forEach(function (anime) {
+        var animeCard = document.createElement("div");
+        animeCard.classList.add("anime-card");
 
-    var animeCardImage = document.createElement("div");
-    animeCardImage.classList.add("anime-card-image");
+        var animeCardImage = document.createElement("div");
+        animeCardImage.classList.add("anime-card-image");
 
-    animeCard.appendChild(animeCardImage);
+        animeCard.appendChild(animeCardImage);
 
-    var animeImage = document.createElement("img");
-    animeImage.src = anime.image;
-    animeCardImage.appendChild(animeImage);
+        var animeImage = document.createElement("img");
+        animeImage.src = anime.image;
+        animeCardImage.appendChild(animeImage);
 
 
-    var animeCardInfo = document.createElement("div");
-    animeCardInfo.classList.add("anime-card-info");
+        var animeCardInfo = document.createElement("div");
+        animeCardInfo.classList.add("anime-card-info");
 
-    animeCard.appendChild(animeCardInfo);
+        animeCard.appendChild(animeCardInfo);
 
-    var animeName = document.createElement("h3");
-    animeName.textContent = anime.name;
-    animeCardInfo.appendChild(animeName);
+        var animeName = document.createElement("h3");
+        animeName.textContent = anime.name;
+        animeCardInfo.appendChild(animeName);
 
-    var animeDescription = document.createElement("p");
-    animeDescription.textContent = anime.description;
-    animeCardInfo.appendChild(animeDescription);
+        var animeDescription = document.createElement("p");
+        animeDescription.textContent = anime.description;
+        animeCardInfo.appendChild(animeDescription);
 
-    resultsContainer.appendChild(animeCard);
-});
+        resultsContainer.appendChild(animeCard);
+    });
+}
+else {
+    var notFoundMessage = document.createElement("div");
+    notFoundMessage.classList.add("not-found");
+    notFoundMessage.textContent = "Not found !";
+    resultsContainer.appendChild(notFoundMessage);
+
+}
 
 // Function to retrieve URL parameters
 function getParameterByName(name) {
@@ -150,11 +160,33 @@ function getParameterByName(name) {
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
 
+//ALERT
+
+function showAlert(message) {
+    var modal = document.getElementById("customAlertModal");
+    var alertMessage = document.getElementById("alertMessage");
+
+    alertMessage.textContent = message;
+    modal.style.display = "block";
+}
+
+// Close the custom alert modal
+function closeAlert() {
+    var modal = document.getElementById("customAlertModal");
+    modal.style.display = "none";
+}
+
+//SEARCH 
+
 function searchAnime() {
 
     var searchQuery = document.getElementById("searchInput").value.toLowerCase();
 
-    window.location.href = 'search.html?query=' + encodeURIComponent(searchQuery);
+    if (searchQuery == '') {
+        showAlert('Enter an Anime')
+    }
+    else
+        window.location.href = 'search.html?query=' + encodeURIComponent(searchQuery);
 
 }
 
@@ -185,6 +217,14 @@ document.addEventListener("click", function (event) {
 
 if (window.innerWidth <= 992) {
     document.getElementById('close-button').style.display = 'block'
+}
+
+const storedCards = localStorage.getItem('favoriteCards');
+const favoriteCards = JSON.parse(storedCards);
+
+const favoriteMenu = document.getElementById('favorite-nav');
+if (favoriteMenu) {
+    favoriteMenu.textContent = ` ${favoriteCards.length}`;
 }
 
 

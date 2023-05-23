@@ -21,9 +21,15 @@
 
         <div class="search-div">
             <img src="Images/search.png" onclick="searchAnime()">
-            <input type="text" id="searchInput" placeholder="Search anime...">
-            <div id="errorMessage" class="error-message"></div>
+            <input type="text" id="searchInput" placeholder="Search anime..." required>
 
+            <div id="customAlertModal">
+                <div class="modal-content">
+                    <span onclick="closeAlert()" class="close">&times;</span>
+                    <h2>Alert !</h2>
+                    <p id="alertMessage"></p>
+                </div>
+            </div>
         </div>
         <nav class="nav_bar">
             <div class="closeNav">
@@ -85,7 +91,7 @@
                         dreams of becoming the Hokage, the leader of his village.</p>
 
                     <div class="play">
-                        <button class="watch" onclick="playAnime('Cy5b9q069_c')"> <img src="Images/play.png" alt="">
+                        <button class="watch"> <img src="Images/play.png" alt="">
                             Watch
                             Now</button>
                     </div>
@@ -139,7 +145,7 @@
                         legendary treasure known as the One Piece and become the King of the Pirates.</p>
 
                     <div class="play">
-                        <button class="watch" onclick="playAnime('wvAcBR0-UGg')"> <img src="Images/play.png" alt="">
+                        <button class="watch" onclick="playAnime('tY5m2WAlbOk')"> <img src="Images/play.png" alt="">
                             Watch Now</button>
                     </div>
                 </div>
@@ -254,7 +260,8 @@
         <div class="container-anime">
             <div class="container-animes">
                 <div class="card">
-                    <img class="card-img-top" src="cards/naruto.jpg" alt="Card image cap">
+                    <img onclick="playAnime('Cy5b9q069_c')" onclick="playAnime('Cy5b9q069_c')" class="card-img-top"
+                        src="cards/naruto.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Naruto Shippuden</h5>
                         <img class="choose-favorite" src="Images/favorite-empty.png" />
@@ -264,7 +271,8 @@
 
 
                 <div class="card">
-                    <img class="card-img-top" src="cards/hunter x hunter.jpg" alt="Card image cap">
+                    <img onclick="playAnime('NvZiDugZxTM')" class="card-img-top" src="cards/hunter x hunter.jpg"
+                        alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Hunter x Hunter</h5>
                         <img class="choose-favorite" src="Images/favorite-empty.png" />
@@ -274,7 +282,8 @@
 
 
                 <div class="card">
-                    <img class="card-img-top" src="cards/Attack_on_Titan.webp" alt="Card image cap">
+                    <img onclick="playAnime('Gg9aeloyWZU')" class="card-img-top" src="cards/Attack_on_Titan.webp"
+                        alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Attack On Titan</h5>
                         <img class="choose-favorite" src="Images/favorite-empty.png" />
@@ -284,7 +293,8 @@
 
 
                 <div class="card">
-                    <img class="card-img-top" src="cards/one-piece.jpg" alt="Card image cap">
+                    <img onclick="playAnime('tY5m2WAlbOk')" class="card-img-top" src="cards/one-piece.jpg"
+                        alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">One Piece</h5>
                         <img class="choose-favorite" src="Images/favorite-empty.png" />
@@ -294,7 +304,8 @@
 
 
                 <div class="card">
-                    <img class="card-img-top" src="cards/death-note.jpg" alt="Card image cap">
+                    <img onclick="playAnime('bo_mkoII-wA')" class="card-img-top" src="cards/death-note.jpg"
+                        alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Death Note</h5>
                         <img class="choose-favorite" src="Images/favorite-empty.png" />
@@ -303,7 +314,8 @@
                 </div>
 
                 <div class="card">
-                    <img class="card-img-top" src="cards/dragon-ball.png" alt="Card image cap">
+                    <img onclick="playAnime('XVRoR8df8i4')" class="card-img-top" src="cards/dragon-ball.png"
+                        alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Dragon Ball Z</h5>
                         <img class="choose-favorite" src="Images/favorite-empty.png" />
@@ -312,7 +324,8 @@
                 </div>
 
                 <div class="card">
-                    <img class="card-img-top" src="cards/demon-slayer.jpg" alt="Card image cap">
+                    <img onclick="playAnime('GCJnG6DYEeg')" class="card-img-top" src="cards/demon-slayer.jpg"
+                        alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Demon Slayer</h5>
                         <img class="choose-favorite" src="Images/favorite-empty.png" />
@@ -337,7 +350,8 @@
         <div class="container-anime">
             <div class="container-animes-1">
                 <div class="card">
-                    <img class="card-img-top" src="cards/blue-lock-1.jpg" alt="Card image cap">
+                    <img onclick="playAnime('ZN0v2wJFVlk')" class="card-img-top" src="cards/blue-lock-1.jpg"
+                        alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Blue Lock</h5>
                         <img class="choose-favorite" src="Images/favorite-empty.png" />
@@ -347,7 +361,8 @@
 
 
                 <div class="card">
-                    <img class="card-img-top" src="cards/boruto.jpg" alt="Card image cap">
+                    <img onclick="playAnime('foA_nrnYrXY')" class="card-img-top" src="cards/boruto.jpg"
+                        alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Boruto</h5>
                         <img class="choose-favorite" src="Images/favorite-empty.png" />
@@ -357,7 +372,8 @@
 
 
                 <div class="card">
-                    <img class="card-img-top" src="cards/jujutsu-kaisen.jpg" alt="Card image cap">
+                    <img onclick="playAnime('5xZ4_r_TMFM')" class="card-img-top" src="cards/jujutsu-kaisen.jpg"
+                        alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">jujutsu-kaisen</h5>
                         <img class="choose-favorite" src="Images/favorite-empty.png" />
@@ -367,7 +383,8 @@
 
 
                 <div class="card">
-                    <img class="card-img-top" src="cards/vinland-saga.jpg" alt="Card image cap">
+                    <img onclick="playAnime('Kg2D1SrUw48')" class="card-img-top" src="cards/vinland-saga.jpg"
+                        alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Vinland Saga</h5>
                         <img class="choose-favorite" src="Images/favorite-empty.png" />
@@ -377,7 +394,8 @@
 
 
                 <div class="card">
-                    <img class="card-img-top" src="cards/dr-stone.jpg" alt="Card image cap">
+                    <img onclick="playAnime('lQTHa1olGdk')" class="card-img-top" src="cards/dr-stone.jpg"
+                        alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Dr Stone</h5>
                         <img class="choose-favorite" src="Images/favorite-empty.png" />
@@ -402,7 +420,8 @@
         <div class="container-anime">
             <div class="container-animes-2">
                 <div class="card">
-                    <img class="card-img-top" src="cards/tokyo-ghoul.jpg" alt="Card image cap">
+                    <img onclick="playAnime('ZsQnAuh3tZU')" class="card-img-top" src="cards/tokyo-ghoul.jpg"
+                        alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Tokyo Ghoul</h5>
                         <img class="choose-favorite" src="Images/favorite-empty.png" />
@@ -412,7 +431,8 @@
 
 
                 <div class="card">
-                    <img class="card-img-top" src="cards/your-lie-in-april.jpg" alt="Card image cap">
+                    <img onclick="playAnime('ZPTRECs8hyg')" class="card-img-top" src="cards/your-lie-in-april.jpg"
+                        alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Your Lie in April</h5>
                         <img class="choose-favorite" src="Images/favorite-empty.png" />
@@ -422,7 +442,8 @@
 
 
                 <div class="card">
-                    <img class="card-img-top" src="cards/fmab.jpg" alt="Card image cap">
+                    <img onclick="playAnime('UNxMHo2ZOrM')" class="card-img-top" src="cards/fmab.jpg"
+                        alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Full Metal Alchemist</h5>
                         <img class="choose-favorite" src="Images/favorite-empty.png" />
@@ -432,7 +453,8 @@
 
 
                 <div class="card">
-                    <img class="card-img-top" src="cards/bleach.jpg" alt="Card image cap">
+                    <img onclick="playAnime('NRIZ-bCVICI')" class="card-img-top" src="cards/bleach.jpg"
+                        alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Bleach</h5>
                         <img class="choose-favorite" src="Images/favorite-empty.png" />
@@ -442,7 +464,8 @@
 
 
                 <div class="card">
-                    <img class="card-img-top" src="cards/kimetsu-no-yaiba.png" alt="Card image cap">
+                    <img onclick="playAnime('GCJnG6DYEeg')" class="card-img-top" src="cards/kimetsu-no-yaiba.png"
+                        alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Kimetsu No Yaiba</h5>
                         <img class="choose-favorite" src="Images/favorite-empty.png" />
@@ -451,7 +474,8 @@
                 </div>
 
                 <div class="card">
-                    <img class="card-img-top" src="cards/haikyu.jpg" alt="Card image cap">
+                    <img onclick="playAnime('tshIXol-9TA')" class="card-img-top" src="cards/haikyu.jpg"
+                        alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Haikyu</h5>
                         <img class="choose-favorite" src="Images/favorite-empty.png" />
@@ -460,7 +484,8 @@
                 </div>
 
                 <div class="card">
-                    <img class="card-img-top" src="cards/yugioh.jpg" alt="Card image cap">
+                    <img onclick="playAnime('UfezodP_xJg')" class="card-img-top" src="cards/yugioh.jpg"
+                        alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Yu-Gi-Oh</h5>
                         <img class="choose-favorite" src="Images/favorite-empty.png" />

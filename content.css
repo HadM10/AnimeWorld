@@ -12,6 +12,8 @@
     overflow: hidden;
     width: 200%;
 
+
+
 }
 
 .container-anime {
@@ -148,7 +150,44 @@
     padding-top: 200px;
 }
 
+#favorite-anime {
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    height: 500px;
+}
+
+.card-fav {
+    margin: 50px;
+}
+
+
+
+
+
 @media (max-width: 575px) {
+
+    #favorite-anime {
+
+        padding: 0 0 0 5%;
+        width: 100%;
+        margin-top: -5%;
+
+        flex-wrap: wrap;
+        overflow-y: scroll;
+    }
+
+    .card-fav {
+        margin: auto;
+    }
+
+    #player-container {
+        display: flex;
+        position: relative;
+        width: 80%;
+        height: 400px;
+        margin: auto;
+        padding-top: 200px;
+    }
 
     .container-animes .card,
     .container-animes-1 .card,
@@ -224,7 +263,8 @@
     }
 
     .cWidth {
-        height: inherit !important;
+
+        height: 140px !important;
         margin-top: 50px !important;
     }
 
@@ -241,9 +281,5 @@
         margin-bottom: 0px;
     }
 
-    #favorite-anime {
-        padding: 0 0 0 5%;
-        width: 100%;
-        margin-top: -5%;
-    }
+
 }
