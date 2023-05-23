@@ -12,6 +12,7 @@ favoriteCards.forEach(card => {
 
   const cardElement = document.createElement('div');
   cardElement.classList.add('card');
+  cardElement.classList.add('card-fav');
   cardElement.classList.add('cWidth');
   cardElement.innerHTML = `
     <img class="card-img-top" src="${card.image}">
@@ -54,10 +55,32 @@ if (window.innerWidth <= 992) {
   document.getElementById('close-button').style.display = 'block'
 }
 
+//ALERT
+
+function showAlert(message) {
+  var modal = document.getElementById("customAlertModal");
+  var alertMessage = document.getElementById("alertMessage");
+
+  alertMessage.textContent = message;
+  modal.style.display = "block";
+}
+
+// Close the custom alert modal
+function closeAlert() {
+  var modal = document.getElementById("customAlertModal");
+  modal.style.display = "none";
+}
+
+//SEARCH 
+
 function searchAnime() {
 
   var searchQuery = document.getElementById("searchInput").value.toLowerCase();
 
-  window.location.href = 'search.html?query=' + encodeURIComponent(searchQuery);
+  if (searchQuery == '') {
+    showAlert('Enter an Anime')
+  }
+  else
+    window.location.href = 'search.html?query=' + encodeURIComponent(searchQuery);
 
 }

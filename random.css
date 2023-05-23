@@ -22,8 +22,6 @@
 
 .character-image {
     position: relative;
-
-
 }
 
 .character-image img {
@@ -102,4 +100,87 @@
 .btn-random-character {
     width: 50%;
     margin: auto;
+}
+
+/* RESPONSIVE */
+
+/* For screens smaller than 576px */
+@media (max-width: 575px) {
+
+    .container-characters {
+
+        padding-top: 30px !important;
+
+    }
+
+    .character-image img {
+
+        height: 300px;
+        object-fit: cover;
+        width: 200px;
+
+    }
+
+    .characterRandom {
+        width: 35%;
+        margin: auto;
+        color: white;
+        padding-top: 15% !important;
+        position: relative;
+
+        font-family: kuro;
+    }
+
+    .characterRandom h1 {
+        text-align: center;
+        padding-bottom: 15px;
+        font-size: 20px;
+        width: 165px;
+
+    }
+
+    .btn-random-character {
+
+        width: 165px;
+    }
+
+    .btn-random-character button {
+        width: 120px;
+        padding: 5px;
+        height: 30px;
+        font-size: 10px;
+        margin-left: 20px;
+
+    }
+
+    .character-info h2 {
+        color: black;
+        padding: 5%;
+        font-size: 15px;
+        font-family: kuro;
+        font-weight: bold;
+    }
+
+    .character-info {
+
+        width: 200px;
+        background-image: url('Images/back2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        height: auto;
+        margin-top: -4px;
+    }
+
+    .character-info p {
+        color: black;
+        padding: 5%;
+        font-size: 7px;
+        font-family: kuro;
+        text-shadow: none !important;
+    }
+
+    .randomfoot {
+        position: fixed;
+    }
 }

@@ -17,7 +17,13 @@
         <div class="search-div">
             <img src="Images/search.png" onclick="searchAnime()">
             <input type="text" id="searchInput" placeholder="Search anime...">
-
+            <div id="customAlertModal">
+                <div class="modal-content">
+                    <span onclick="closeAlert()" class="close">&times;</span>
+                    <h2>Alert !</h2>
+                    <p id="alertMessage"></p>
+                </div>
+            </div>
         </div>
         <nav class="nav_bar">
             <div class="closeNav">
@@ -26,7 +32,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="search.html">Search</a></li>
-                <li><a href="favorites.html">Favorites <span id="favorites-count"></span></a></li>
+                <li><a href="favorites.html">Favorites <span id="favorite-nav"></span></a></li>
                 <li><a class="active" href="random.html">Random</a></li>
             </ul>
         </nav>
@@ -49,7 +55,7 @@
             <p class="character-description"></p>
         </div>
     </div>
-    <footer class="footer">
+    <footer class="footer randomfoot">
         <div class="container">
             <p>&copy; 2023 AnimeWorld. All rights reserved.</p>
 

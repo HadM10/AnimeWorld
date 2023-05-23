@@ -1,3 +1,9 @@
+#animeResults {
+    overflow-y: scroll;
+    height: 700px;
+    width: 100%;
+}
+
 .anime-card {
     width: 80%;
     display: flex;
@@ -6,7 +12,6 @@
     padding-top: 50px !important;
     flex-wrap: wrap;
     justify-content: center;
-
 
 }
 
@@ -38,4 +43,77 @@
     font-size: 20px;
     font-family: kuro;
     text-shadow: none !important;
+}
+
+.not-found {
+    font-size: 100px;
+    font-family: kuro;
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    font-weight: bold;
+    width: 80%;
+    margin: auto;
+    background-image: linear-gradient(to right, #a50000, #ffffff);
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientAnimation 5s linear infinite;
+    background-size: 200% auto;
+
+}
+
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* RESPONSIVE */
+
+/* For screens smaller than 576px */
+@media (max-width: 575px) {
+    .anime-card img {
+        height: 300px;
+        object-fit: cover;
+        width: 200px;
+    }
+
+    .anime-card-info {
+        width: 200px;
+        margin-top: -4px;
+        height: auto;
+    }
+
+    .anime-card h3 {
+
+        padding-bottom: 10px;
+        font-size: 20px;
+        font-family: kuro;
+    }
+
+    .anime-card p {
+
+        color: black;
+        padding: 5%;
+        font-size: 8px;
+        font-family: kuro;
+        text-shadow: none !important;
+    }
+
+    .not-found {
+        font-size: 40px;
+    }
 }

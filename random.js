@@ -132,7 +132,7 @@ document.getElementById("getRandomCharacter").addEventListener("click", function
 const storedCards = localStorage.getItem('favoriteCards');
 const favoriteCards = JSON.parse(storedCards);
 
-const favoriteMenu = document.getElementById('favorites-count');
+const favoriteMenu = document.getElementById('favorite-nav');
 if (favoriteMenu) {
     favoriteMenu.textContent = ` ${favoriteCards.length}`;
 }
@@ -148,11 +148,33 @@ window.addEventListener('scroll', () => {
     }
 });
 
+//ALERT
+
+function showAlert(message) {
+    var modal = document.getElementById("customAlertModal");
+    var alertMessage = document.getElementById("alertMessage");
+
+    alertMessage.textContent = message;
+    modal.style.display = "block";
+}
+
+// Close the custom alert modal
+function closeAlert() {
+    var modal = document.getElementById("customAlertModal");
+    modal.style.display = "none";
+}
+
+//SEARCH 
+
 function searchAnime() {
 
     var searchQuery = document.getElementById("searchInput").value.toLowerCase();
 
-    window.location.href = 'search.html?query=' + encodeURIComponent(searchQuery);
+    if (searchQuery == '') {
+        showAlert('Enter an Anime')
+    }
+    else
+        window.location.href = 'search.html?query=' + encodeURIComponent(searchQuery);
 
 }
 
