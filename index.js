@@ -245,7 +245,7 @@ rightArrow1.addEventListener('click', () => {
 
 rightArrow2.addEventListener('click', () => {
     const maxScroll = cardWrapper.scrollWidth - cardWrapper.clientWidth;
-    if (currentPosition > -maxScroll - cardWidth) {
+    if (currentPosition > -maxScroll - cardWidth - 300) {
         if (window.innerWidth <= 992) {
             currentPosition -= (3 * cardWidth);
         }
@@ -255,16 +255,7 @@ rightArrow2.addEventListener('click', () => {
     }
 });
 
-rightArrow.addEventListener('click', () => {
-    const maxScroll = cardWrapper.scrollWidth - cardWrapper.clientWidth;
-    if (currentPosition > -maxScroll - cardWidth) {
-        if (window.innerWidth <= 992) {
-            currentPosition -= (3 * cardWidth);
-        }
-        currentPosition -= (4 * cardWidth);
-        cardWrapper.style.transform = `translateX(${currentPosition}px)`;
-    }
-});
+
 
 window.addEventListener('scroll', () => {
     const navbar = document.getElementsByTagName('header')[0];
