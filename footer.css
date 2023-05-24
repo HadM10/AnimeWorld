@@ -9,11 +9,16 @@
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    position: absolute;
 }
 
 .footer p {
     margin: 0;
     padding: 30px;
+}
+
+.randomfoot {
+    position: relative;
 }
 
 /* .social-icons {

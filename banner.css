@@ -297,3 +297,115 @@ p {
 
 
 }
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .carousel-caption {
+        top: 15% !important;
+        right: 50% !important;
+        left: 5% !important;
+        bottom: 40% !important;
+        width: 90% !important;
+        margin: auto;
+        float: left;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carousel-caption h1 {
+        text-align: center;
+        font-size: 25px !important;
+    }
+
+    .carousel-caption p {
+        width: 80%;
+        text-align: left;
+        float: none;
+        font-size: 12px;
+        margin: 5px auto;
+        margin-bottom: 10px !important;
+    }
+
+    .carousel-item button.genre {
+        font-size: 12px;
+        margin-right: 5px;
+        margin-bottom: 5%;
+        width: 80px;
+        padding: 0 1px 0 1px;
+    }
+
+    .carousel-item button.watch {
+        width: 90px;
+        height: 25px;
+        font-size: 12px;
+        padding: 1px;
+    }
+
+    .carousel-item button.watch img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .carousel-caption h1.snk {
+        font-size: 45px !important;
+    }
+
+    .carousel-caption h1.one_piece {
+        font-size: 45px !important;
+    }
+
+    .carousel-caption h1.dragon-ball {
+        font-size: 35px !important;
+    }
+
+    .carousel-caption h1.death-note {
+        font-size: 30px !important;
+    }
+
+    .demon-slayer {
+        width: 60px !important;
+        margin: auto;
+        margin-top: -10px !important;
+    }
+
+    .rate {
+        flex-direction: row;
+        margin: 5px auto;
+        text-align: center;
+        margin-bottom: 5px !important;
+    }
+
+    .rate2 {
+        margin-bottom: 0px !important;
+    }
+
+    .play {
+        margin: auto;
+        width: 20%;
+    }
+
+    .carousel-item img {
+        height: 40vh;
+    }
+
+    .backblack {
+        height: 40vh;
+        width: 30%;
+    }
+
+    .banner-fade {
+        top: 30vh;
+        height: 6rem;
+    }
+
+    .carousel-item img.rating {
+        width: 15px;
+        height: 15px;
+    }
+
+    .carousel-indicators button {
+        width: 20px !important;
+    }
+
+}
