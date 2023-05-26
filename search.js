@@ -1,3 +1,10 @@
+window.addEventListener('load', function () {
+    var preloader = document.querySelector('.preloader');
+
+    setTimeout(function () {
+        preloader.style.display = 'none';
+    }, 4000);
+});
 
 // JavaScript code for search.html
 var searchQuery = decodeURIComponent(getParameterByName('query'));
