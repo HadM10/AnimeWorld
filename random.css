@@ -268,7 +268,7 @@
     }
 }
 
-@media (max-width: 1710px) and (min-width: 1000px) {
+@media (max-width: 1585px) and (min-width: 1275px) {
 
     .characterRandom {
         width: 50%;
@@ -276,9 +276,15 @@
 
     }
 
+    .btn-random-character button {
+        width: 200px;
+        margin-left: 20%;
+    }
+
     .character-image img {
         height: 600px;
         max-width: 400px;
+        object-fit: cover;
     }
 
     .character-info {
@@ -291,4 +297,105 @@
 
 }
 
-/* @media (max-width: 1520px) and (min-width: 1000px) { */
+@media (max-width: 1275px) and (min-width: 1137px) {
+    .characterRandom {
+        width: 50%;
+    }
+
+    .btn-random-character button {
+        width: 200px;
+        margin-left: 15%;
+    }
+
+    .character-image img {
+        height: 600px;
+        max-width: 350px;
+        object-fit: cover;
+    }
+
+    .character-info {
+        height: 600px;
+    }
+
+    .characterRandom h1 {
+        font-size: 35px;
+    }
+
+}
+
+@media (min-width: 1585px) {
+    .characterRandom {
+        width: 40%;
+    }
+}
+
+@media (max-width: 1137px) and (min-width: 950px) {
+    .characterRandom {
+        width: 50%;
+        padding-top: 15% !important;
+    }
+
+    .btn-random-character button {
+        width: 200px;
+        margin-left: 5%;
+    }
+
+    .character-image img {
+        height: 500px;
+        max-width: 300px;
+        object-fit: cover;
+    }
+
+    .character-info {
+        height: 500px;
+    }
+
+    .characterRandom h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 950px) and (min-width: 767px) {
+    .characterRandom {
+        width: 60%;
+        padding-top: 15% !important;
+    }
+
+    .container-characters {
+        width: 90%;
+    }
+
+    .btn-random-character button {
+        width: 200px;
+        margin-left: 5%;
+    }
+
+    .character-image img {
+        height: 400px;
+        max-width: 250px;
+        object-fit: cover;
+    }
+
+    .character-info {
+        height: 400px;
+
+    }
+
+    .character-info p {
+        font-size: 13px;
+    }
+
+    .characterRandom h1 {
+        font-size: 25px;
+    }
+
+    .randomfoot {
+        position: absolute;
+    }
+}
+
+@media (min-width: 1585px) {
+    .container-characters {
+        width: 100%;
+    }
+}

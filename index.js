@@ -1,4 +1,10 @@
+window.addEventListener('load', function () {
+    var preloader = document.querySelector('.preloader');
 
+    setTimeout(function () {
+        preloader.style.display = 'none';
+    }, 8000);
+});
 
 function menuHover() {
 
@@ -19,14 +25,14 @@ function showNav() {
 }
 
 document.addEventListener("click", function (event) {
-    if (window.innerWidth <= 992) {
+    if (window.innerWidth <= 1009) {
         if (!document.querySelector('.nav_bar').contains(event.target) && event.target !== document.getElementById('menu-bar2') || document.getElementById('close-button').contains(event.target)) {
             document.querySelector('.nav_bar').style.display = "none";
         }
     }
 });
 
-if (window.innerWidth <= 992) {
+if (window.innerWidth <= 1009) {
     document.getElementById('close-button').style.display = 'block'
 }
 

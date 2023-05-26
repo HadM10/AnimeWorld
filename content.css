@@ -283,8 +283,20 @@
         margin-bottom: 0px;
     }
 
+    .favfoot,
+    .searchfoot {
+        position: absolute !important;
+    }
+
 
 }
+
+@media (min-width: 750px) {
+    #player-container {
+        padding-bottom: 100px;
+    }
+}
+
 
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -297,6 +309,11 @@
 
         flex-wrap: wrap;
         overflow-y: scroll;
+    }
+
+    .favfoot,
+    .searchfoot {
+        position: absolute !important;
     }
 
     .card-fav {
@@ -403,5 +420,142 @@
     .animeFavorito {
         width: 50%;
         margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 1275px) and (min-width: 1137px) {
+
+
+
+    .container-animes .card,
+    .container-animes-1 .card,
+    .container-animes-2 .card {
+        margin-right: 50px !important;
+        border: none;
+        box-shadow: 2px 2px 4px black;
+        height: 17rem;
+        filter: brightness(80%);
+        cursor: pointer;
+        transition: 0.5s;
+        width: 12rem;
+        float: left;
+    }
+
+
+    .card-body {
+
+        top: 82%;
+
+    }
+
+    .card-body h5 {
+        font-size: 15px;
+        float: left;
+        color: white;
+        margin-left: -12px;
+        margin-top: 10px;
+    }
+
+    .card-body img {
+        width: 15%;
+        float: right;
+        margin-top: 5px;
+        transition: 1s;
+        margin-right: -14px;
+    }
+
+    #favorite-anime .card-body {
+        top: 85%;
+    }
+}
+
+@media (max-width: 1137px) and (min-width: 950px) {
+
+
+
+    .container-animes .card,
+    .container-animes-1 .card,
+    .container-animes-2 .card {
+        margin-right: 50px !important;
+        border: none;
+        box-shadow: 2px 2px 4px black;
+        height: 14rem;
+        filter: brightness(80%);
+        cursor: pointer;
+        transition: 0.5s;
+        width: 10rem;
+        float: left;
+    }
+
+
+    .card-body {
+
+        top: 80%;
+
+    }
+
+    .card-body h5 {
+        font-size: 15px;
+        float: left;
+        color: white;
+        margin-left: -12px;
+        margin-top: 10px;
+    }
+
+    .card-body img {
+        width: 15%;
+        float: right;
+        margin-top: 5px;
+        transition: 1s;
+        margin-right: -14px;
+    }
+
+    #favorite-anime .card-body {
+        top: 85%;
+    }
+
+}
+
+@media (max-width: 950px) and (min-width: 768px) {
+
+    .container-animes .card,
+    .container-animes-1 .card,
+    .container-animes-2 .card {
+        margin-right: 50px !important;
+        border: none;
+        box-shadow: 2px 2px 4px black;
+        height: 10.5rem;
+        filter: brightness(80%);
+        cursor: pointer;
+        transition: 0.5s;
+        width: 7.5rem;
+        float: left;
+    }
+
+
+    .card-body {
+
+        top: 75%;
+
+    }
+
+    #favorite-anime .card-body {
+        top: 85%;
+    }
+
+    .card-body h5 {
+        font-size: 12px;
+        float: left;
+        color: white;
+        margin-left: -12px;
+        margin-top: 10px;
+    }
+
+    .card-body img {
+        width: 15%;
+        float: right;
+        margin-top: 10px;
+        transition: 1s;
+        margin-right: -14px;
     }
 }

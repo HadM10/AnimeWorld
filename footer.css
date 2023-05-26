@@ -21,6 +21,14 @@
     position: relative;
 }
 
+.favfoot {
+    position: relative;
+}
+
+.searchfoot {
+    position: absolute;
+}
+
 /* .social-icons {
     list-style: none;
     padding: 0;

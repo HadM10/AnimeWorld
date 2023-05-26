@@ -1,3 +1,11 @@
+window.addEventListener('load', function () {
+    var preloader = document.querySelector('.preloader');
+
+    setTimeout(function () {
+        preloader.style.display = 'none';
+    }, 4000);
+});
+
 let randomCharacters = [
     {
         "name": "Naruto Uzumaki",
