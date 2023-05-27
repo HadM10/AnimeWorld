@@ -236,7 +236,7 @@ header {
 
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 766px) {
     header {
         height: 50px;
     }
@@ -313,152 +313,6 @@ header {
 
     .search-div:hover input {
         width: 120px;
-    }
-}
-
-@media (max-width: 1710px) and (min-width: 1000px) {
-
-    .search-div {
-        margin-right: 15px !important;
-        margin-left: 100px;
-
-    }
-
-
-
-    .nav_bar {
-        margin-left: 0 !important;
-    }
-
-    .search-div:hover input {
-        width: 300px;
-    }
-
-}
-
-@media (max-width: 1585px) and (min-width: 1275px) {
-    .nav_bar li {
-        font-size: 23px;
-    }
-
-    #favorite-nav,
-    #favorite-count {
-        font-size: 25px;
-    }
-
-    .logo {
-        margin: 25px;
-        font-size: 40px;
-
-    }
-
-    .search-div input {
-        width: 200px;
-        height: 35px;
-
-    }
-
-    .search-div img {
-        width: 55px;
-        height: 52px;
-    }
-
-    .search-div {
-        margin-right: 0px !important;
-        margin-left: 0px;
-
-    }
-
-    .search-div:hover input {
-        width: 250px;
-    }
-}
-
-@media (max-width: 1275px) and (min-width: 1137px) {
-
-    .nav_bar li {
-        font-size: 20px;
-    }
-
-    .nav_bar {
-        margin-left: 0px !important;
-        padding: 8px;
-    }
-
-    #favorite-nav,
-    #favorite-count {
-        font-size: 25px;
-    }
-
-    .logo {
-        margin: 25px;
-        font-size: 35px;
-
-    }
-
-    .search-div input {
-        width: 150px;
-        height: 35px;
-
-    }
-
-    .search-div img {
-        width: 55px;
-        height: 52px;
-    }
-
-    .search-div {
-        margin-right: 0px !important;
-        margin-left: 0px;
-
-    }
-
-    .search-div:hover input {
-        width: 200px;
-    }
-}
-
-@media (max-width: 1137px) and (min-width: 950px) {
-    .nav_bar li {
-        font-size: 20px;
-        padding: 1px;
-    }
-
-    .nav_bar {
-        margin-left: 0px !important;
-        padding: 5px;
-    }
-
-    #favorite-nav,
-    #favorite-count {
-        font-size: 25px;
-    }
-
-    .logo {
-        margin: 25px;
-        font-size: 30px;
-
-    }
-
-    .search-div input {
-        width: 150px;
-        height: 35px;
-
-    }
-
-    .search-div img {
-        width: 55px;
-        height: 52px;
-    }
-
-    .search-div {
-        margin-right: 0px !important;
-        margin-left: 0px;
-
-    }
-
-    .search-div:hover input {
-        width: 180px;
     }
 }
 
@@ -545,4 +399,148 @@ header {
     }
 }
 
-@media (max-width: 1710px) and (min-width: 1580px) {}
+/* @media (max-width: 1710px) and (min-width: 1010px) {
+
+    .search-div {
+        margin-right: 15px !important;
+        margin-left: 100px;
+
+    }
+
+
+
+    .nav_bar {
+        margin-left: 0 !important;
+    }
+
+    .search-div:hover input {
+        width: 300px;
+    }
+
+} */
+
+@media (max-width: 1585px) and (min-width: 1275px) {
+    .nav_bar li {
+        font-size: 23px;
+    }
+
+    #favorite-nav,
+    #favorite-count {
+        font-size: 25px;
+    }
+
+    .logo {
+        margin: 25px;
+        font-size: 40px;
+
+    }
+
+    .search-div input {
+        width: 180px;
+        height: 35px;
+
+    }
+
+    .search-div img {
+        width: 55px;
+        height: 52px;
+    }
+
+    .search-div {
+        margin-right: 0px !important;
+        margin-left: 0px;
+
+    }
+
+    .search-div:hover input {
+        width: 220px;
+    }
+}
+
+@media (max-width: 1274px) and (min-width: 1137px) {
+
+    .nav_bar li {
+        font-size: 20px;
+    }
+
+    .nav_bar {
+        margin-left: 0px !important;
+        padding: 8px;
+    }
+
+    #favorite-nav,
+    #favorite-count {
+        font-size: 25px;
+    }
+
+    .logo {
+        margin: 25px;
+        font-size: 35px;
+
+    }
+
+    .search-div input {
+        width: 150px;
+        height: 35px;
+
+    }
+
+    .search-div img {
+        width: 55px;
+        height: 52px;
+    }
+
+    .search-div {
+        margin-right: 0px !important;
+        margin-left: 0px;
+
+    }
+
+    .search-div:hover input {
+        width: 200px;
+    }
+}
+
+@media (max-width: 1136px) and (min-width: 950px) {
+    .nav_bar li {
+        font-size: 20px;
+        padding: 1px;
+    }
+
+    .nav_bar {
+        margin-left: 0px !important;
+        padding: 5px;
+    }
+
+    #favorite-nav,
+    #favorite-count {
+        font-size: 25px;
+    }
+
+    .logo {
+        margin: 25px;
+        font-size: 30px;
+
+    }
+
+    .search-div input {
+        width: 150px;
+        height: 35px;
+
+    }
+
+    .search-div img {
+        width: 55px;
+        height: 52px;
+    }
+
+    .search-div {
+        margin-right: 0px !important;
+        margin-left: 0px;
+
+    }
+
+    .search-div:hover input {
+        width: 180px;
+    }
+}
