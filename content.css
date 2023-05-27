@@ -507,6 +507,14 @@
         transition: 1s;
         margin-right: -14px;
     }
+
+    #favorite-anime .card-body {
+        top: 87%;
+    }
+
+    #favorite-anime .card-body h5 {
+        margin-top: 0;
+    }
 }
 
 @media (max-width: 1136px) and (min-width: 950px) {

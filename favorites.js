@@ -93,3 +93,15 @@ function searchAnime() {
     window.location.href = 'search.html?query=' + encodeURIComponent(searchQuery);
 
 }
+
+
+window.addEventListener('scroll', () => {
+  const navbar = document.getElementsByTagName('header')[0];
+  const scrolledClass = 'navbar-scrolled';
+
+  if (window.scrollY > 200) {
+    navbar.classList.add(scrolledClass);
+  } else {
+    navbar.classList.remove(scrolledClass);
+  }
+});

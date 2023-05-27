@@ -214,3 +214,15 @@ document.addEventListener("click", function (event) {
 if (window.innerWidth <= 1009) {
     document.getElementById('close-button').style.display = 'block'
 }
+
+
+window.addEventListener('scroll', () => {
+    const navbar = document.getElementsByTagName('header')[0];
+    const scrolledClass = 'navbar-scrolled';
+
+    if (window.scrollY > 200) {
+        navbar.classList.add(scrolledClass);
+    } else {
+        navbar.classList.remove(scrolledClass);
+    }
+});

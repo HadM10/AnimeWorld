@@ -7,6 +7,16 @@ window.addEventListener('load', function () {
 });
 
 
+window.addEventListener('scroll', () => {
+    const navbar = document.getElementsByTagName('header')[0];
+    const scrolledClass = 'navbar-scrolled';
+
+    if (window.scrollY > 200) {
+        navbar.classList.add(scrolledClass);
+    } else {
+        navbar.classList.remove(scrolledClass);
+    }
+});
 
 // JavaScript code for search.html
 var searchQuery = decodeURIComponent(getParameterByName('query'));
