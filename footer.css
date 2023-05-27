@@ -27,6 +27,7 @@
 
 .searchfoot {
     position: relative;
+    bottom: 0;
 }
 
 /* .social-icons {
