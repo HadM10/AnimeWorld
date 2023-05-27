@@ -298,7 +298,7 @@ p {
 
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 766px) {
 
     .carousel-caption {
         top: 15% !important;
@@ -410,7 +410,7 @@ p {
 
 }
 
-@media (max-width: 1275px) and (min-width: 1137px) {
+@media (max-width: 1274px) and (min-width: 1137px) {
     .backblack {
         height: 60vh;
 
@@ -485,23 +485,73 @@ p {
 }
 
 @media (max-width: 1585px) and (min-width: 1275px) {
-    .backblack {
-        height: 80vh;
-
-    }
 
     .banner-fade {
-        top: 55vh;
+        top: 70vh;
 
     }
 
-    .carousel-item img {
-
-        height: 80vh;
+    .carousel-caption h1 {
+        font-size: 30px !important;
     }
+
+    .carousel-caption p {
+        font-size: 12px;
+        width: 70%;
+        margin-bottom: 15px !important;
+    }
+
+    .carousel-item button.genre {
+        width: 80px;
+        font-size: 12px;
+    }
+
+    .carousel-item button.watch {
+        width: 90px;
+        height: 25px;
+        font-size: 12px;
+        padding: 1px;
+    }
+
+    .carousel-item button.watch img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .rating {
+
+
+        width: 20px !important;
+        height: 20px !important;
+    }
+
+    .carousel-caption h1.snk {
+        font-size: 45px !important;
+    }
+
+    .carousel-caption h1.one_piece {
+        font-size: 45px !important;
+    }
+
+    .carousel-caption h1.dragon-ball {
+        font-size: 35px !important;
+    }
+
+    .carousel-caption h1.death-note {
+        font-size: 30px !important;
+    }
+
+    .demon-slayer {
+        width: 60px !important;
+
+        margin-top: -10px !important;
+    }
+
 }
 
-@media (max-width: 950px) and (min-width: 767px) {
+
+
+@media (max-width: 949px) and (min-width: 767px) {
     .backblack {
         height: 60vh;
     }
@@ -577,9 +627,9 @@ p {
     }
 }
 
-@media (max-width: 1137px) and (min-width: 950px) {
+@media (max-width: 1136px) and (min-width: 950px) {
     .backblack {
-        height: 60vh;
+        height: 70vh;
     }
 
     .banner-fade {
@@ -593,7 +643,7 @@ p {
 
     .carousel-item img {
 
-        height: 60vh;
+        height: 70vh;
     }
 
     .carousel-caption h1 {
