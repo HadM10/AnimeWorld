@@ -277,23 +277,26 @@ window.addEventListener('scroll', () => {
 var player;
 
 function onYouTubeIframeAPIReady() {
-    player = new YT.Player('player-container', {
-        height: '700',
-        width: '1500',
-        videoId: getVideoIdFromUrl(), // Replace with the YouTube video ID
-        playerVars: {
-            autoplay: 1,
-            controls: 1,
-            rel: 0,
-            showinfo: 0
-        },
-        events: {
-            'onReady': onPlayerReady
-        }
-    });
+    setTimeout(function () {
+        player = new YT.Player('player-container', {
+            height: '700',
+            width: '1500',
+            videoId: getVideoIdFromUrl(), // Replace with the YouTube video ID
+            playerVars: {
+                autoplay: 0,
+                controls: 1,
+                rel: 0,
+                showinfo: 0
+            },
+            events: {
+                'onReady': onPlayerReady
+            }
+        });
+    }, 8000);
 }
 
 function onPlayerReady(event) {
+
     event.target.playVideo();
 }
 
