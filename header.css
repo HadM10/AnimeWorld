@@ -188,6 +188,7 @@ header {
 
     .menu {
         display: block;
+        width: 13% !important;
     }
 
     .menu img {
@@ -214,11 +215,12 @@ header {
     .search-div {
         margin: 13px;
         margin-right: 0px !important;
+        margin-left: -10px;
 
     }
 
     .search-div input {
-        width: 100px;
+        width: 80px;
         height: 10px;
         font-size: 10px;
     }
@@ -229,7 +231,7 @@ header {
     }
 
     .search-div:hover input {
-        width: 120px;
+        width: 90px;
     }
 
 

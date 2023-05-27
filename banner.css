@@ -201,7 +201,7 @@ p {
 
     .carousel-caption h1 {
         text-align: center;
-        font-size: 18px !important;
+        font-size: 17px !important;
     }
 
     .carousel-caption p {
@@ -209,12 +209,12 @@ p {
         text-align: left;
         float: none;
         font-size: 8px;
-        margin: 5px auto;
+        margin: auto;
         margin-bottom: 10px !important;
     }
 
     .carousel-item button.genre {
-        font-size: 10px;
+        font-size: 8px;
         margin-right: 5px;
         margin-bottom: 5%;
         width: 60px;
@@ -222,8 +222,8 @@ p {
     }
 
     .carousel-item button.watch {
-        width: 70px;
-        height: 20px;
+        width: 60px;
+        height: 15px;
         font-size: 8px;
         padding: 1px;
     }
@@ -260,7 +260,10 @@ p {
         margin: 5px auto;
         text-align: center;
         margin-bottom: 5px !important;
+
     }
+
+
 
     .rate2 {
         margin-bottom: 0px !important;
@@ -272,22 +275,22 @@ p {
     }
 
     .carousel-item img {
-        height: 30vh;
+        height: 40vh;
     }
 
     .backblack {
-        height: 30vh;
+        height: 40vh;
         width: 30%;
     }
 
     .banner-fade {
-        top: 22vh;
+        top: 28vh;
         height: 5rem;
     }
 
     .carousel-item img.rating {
-        width: 15px;
-        height: 15px;
+        width: 10px;
+        height: 10px;
     }
 
     .carousel-indicators button {
