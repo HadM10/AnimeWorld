@@ -181,9 +181,6 @@
         text-shadow: none !important;
     }
 
-    .randomfoot {
-        position: fixed;
-    }
 }
 
 @media (min-width: 501px) and (max-width: 767px) {
