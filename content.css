@@ -423,7 +423,7 @@
     }
 }
 
-@media (max-width: 1275px) and (min-width: 1137px) {
+@media (max-width: 1275px) and (min-width: 1138px) {
 
 
 
@@ -469,7 +469,47 @@
     }
 }
 
-@media (max-width: 1137px) and (min-width: 950px) {
+@media (max-width: 1585px) and (min-width: 1276px) {
+
+    .container-animes .card,
+    .container-animes-1 .card,
+    .container-animes-2 .card {
+        margin-right: 50px !important;
+        border: none;
+        box-shadow: 2px 2px 4px black;
+        height: 17rem;
+        filter: brightness(80%);
+        cursor: pointer;
+        transition: 0.5s;
+        width: 12rem;
+        float: left;
+    }
+
+
+    .card-body {
+
+        top: 82%;
+
+    }
+
+    .card-body h5 {
+        font-size: 15px;
+        float: left;
+        color: white;
+        margin-left: -12px;
+        margin-top: 10px;
+    }
+
+    .card-body img {
+        width: 15%;
+        float: right;
+        margin-top: 5px;
+        transition: 1s;
+        margin-right: -14px;
+    }
+}
+
+@media (max-width: 1136px) and (min-width: 950px) {
 
 
 
@@ -516,7 +556,7 @@
 
 }
 
-@media (max-width: 950px) and (min-width: 768px) {
+@media (max-width: 949px) and (min-width: 768px) {
 
     .container-animes .card,
     .container-animes-1 .card,

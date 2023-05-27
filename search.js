@@ -6,6 +6,8 @@ window.addEventListener('load', function () {
     }, 4000);
 });
 
+
+
 // JavaScript code for search.html
 var searchQuery = decodeURIComponent(getParameterByName('query'));
 
@@ -107,6 +109,8 @@ var animeArray = [
     }
 
 ];
+
+
 
 var resultsContainer = document.getElementById("animeResults");
 
@@ -215,16 +219,17 @@ function showNav() {
 }
 
 document.addEventListener("click", function (event) {
-    if (window.innerWidth <= 992) {
+    if (window.innerWidth <= 1009) {
         if (!document.querySelector('.nav_bar').contains(event.target) && event.target !== document.getElementById('menu-bar2') || document.getElementById('close-button').contains(event.target)) {
             document.querySelector('.nav_bar').style.display = "none";
         }
     }
 });
 
-if (window.innerWidth <= 992) {
+if (window.innerWidth <= 1009) {
     document.getElementById('close-button').style.display = 'block'
 }
+
 
 const storedCards = localStorage.getItem('favoriteCards');
 const favoriteCards = JSON.parse(storedCards);
