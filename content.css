@@ -607,3 +607,11 @@
         margin-right: -14px;
     }
 }
+
+@media (min-width: 1600px) {
+
+    .favfoot,
+    .searchfoot {
+        position: absolute !important;
+    }
+}

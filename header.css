@@ -419,7 +419,7 @@ header {
 
 } */
 
-@media (max-width: 1585px) and (min-width: 1275px) {
+@media (max-width: 1860px) and (min-width: 1275px) {
     .nav_bar li {
         font-size: 23px;
     }
