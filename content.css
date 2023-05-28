@@ -283,6 +283,9 @@
         margin-bottom: 0px;
     }
 
+    .watchfoot {
+        position: absolute !important;
+    }
 
 
 
@@ -309,7 +312,8 @@
     }
 
     .favfoot,
-    .searchfoot {
+    .searchfoot,
+    .watchfoot {
         position: absolute !important;
     }
 
@@ -608,7 +612,8 @@
 @media (min-width: 1600px) {
 
     .favfoot,
-    .searchfoot {
+    .searchfoot,
+    .watchfoot {
         position: absolute !important;
     }
 }

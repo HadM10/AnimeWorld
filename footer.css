@@ -21,7 +21,8 @@
     position: relative;
 }
 
-.favfoot {
+.favfoot,
+.watchfoot {
     position: relative;
 }
 
